@@ -1,3 +1,13 @@
+## 🏦 Veritabanı Yapısı
+
+* Veritabanı olarak CouchDB kullanılmıştır. 
+* Programın çalışması için php server ına ihtiyaç duyulmaktadır. 
+* Server klasörün içinde veritabanı hakkında bilgiler vardır. Bunlar:
+** viewlerim.txt içinde Coucdb üzerinde oluşturduğunuz view içeriği ve ismi
+** gorsel.txt içeriğinde veritabanı içeriği var
+
+
+
 ## 🚀 Dosya/Klasör Yapısı
 
 Astro projemin içindeki dosya/klasör hiyerarşisi aşağıda gösterilmiştir:
