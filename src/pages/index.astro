@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Alpinejs from "../components/Alpinejs.astro";
+---
+
+<Layout title="Anasayfa">
+  <div>
+    <h2 class="mt-5">Film İnceleme Sitemize Hoşgeldin</h2>
+    <h5>Başlık oluşturma tarihi, 17 Nisan, 2023</h5>
+    <img src="filmIndex.jpg" alt="" class="img" />
+    <p><Alpinejs>
+      <div x-data>
+      <span x-text="$store.yazilar.girisText"></span>
+      </div></Alpinejs>
+    </p>
+  </div>
+</Layout>

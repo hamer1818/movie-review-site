@@ -1,0 +1,6 @@
+yazilariCek/yazilariCek
+
+
+function (doc) {
+  emit(doc.yazilar);
+}

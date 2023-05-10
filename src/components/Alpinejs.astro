@@ -1,0 +1,98 @@
+---
+---
+
+<script>
+    document.addEventListener("alpine:init", () => {
+
+      let Alpine = window["Alpine"];
+
+      async function girisGetir() {
+        let url = "http://localhost/gp_90210000172/server/couchDBConn.php";
+        try {
+          let res = await fetch(url);
+          console.log(res);
+          let result = await res.json();
+          result = result.rows[0].key["girisYazisi"];
+            // console.log(result);
+          return result;
+        } catch (err) {
+          console.log(err);
+        }
+    
+      }
+
+      async function swGetir() {
+        let url = "http://localhost/gp_90210000172/server/couchDBConn.php";
+        try {
+          let res = await fetch(url);
+          console.log(res);
+          let result = await res.json();
+          result = result.rows[0].key["starWars"];
+            // console.log(result);
+          return result;
+        } catch (err) {
+          console.log(err);
+        }
+    
+      }
+      async function ijGetir() {
+        let url =
+          "http://localhost/gp_90210000172/server/couchDBConn.php";
+        try {
+          let res = await fetch(url);
+        //   console.log(res);
+          let result = await res.json();
+          result = result.rows[0].key["indianaJones"];
+            // console.log(result);
+          return result;
+        } catch (err) {
+          console.log(err);
+        }
+    
+      }
+      async function alienGetir() {
+        let url =
+          "http://localhost/gp_90210000172/server/couchDBConn.php";
+        try {
+          let res = await fetch(url);
+        //   console.log(res);
+          let result = await res.json();
+          result = result.rows[0].key["alien"];
+            // console.log(result);
+          return result;
+        } catch (err) {
+          console.log(err);
+        }
+    
+      }
+      async function predatorGetir() {
+        let url =
+          "http://localhost/gp_90210000172/server/couchDBConn.php";
+        try {
+          let res = await fetch(url);
+        //   console.log(res);
+          let result = await res.json();
+          result = result.rows[0].key["predator"];
+            // console.log(result);
+          return result;
+        } catch (err) {
+          console.log(err);
+        }
+    
+      }
+      //---------------------------------------------
+      Alpine.store("yazilar", {
+        init() {
+          console.log(Alpine.store("globalvar").text);
+        },
+        girisText:girisGetir,
+        swText:swGetir,
+        ijText:ijGetir,
+        alienText:alienGetir,
+        predatorText:predatorGetir,
+      });
+    });
+</script>
+
+
+

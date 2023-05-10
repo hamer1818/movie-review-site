@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Alpinejs from "../components/Alpinejs.astro";
+---
+<Layout title="Star Wars" icon="starwarsico.svg">
+
+    <div>
+      <h2 class="mt-5">Star Wars</h2>
+      <h5>Başlık oluşturma tarihi, 17 Nisan, 2023</h5>
+      <img src="starWars.png" alt="" class="img">
+      <p><Alpinejs>
+        <div x-data>
+        <span x-text="$store.yazilar.swText"></span>
+        </div></Alpinejs>
+      </p>
+      
+    </div>
+
+
+
+
+</Layout>
+
+

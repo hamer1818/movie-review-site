@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Alpinejs from "../components/Alpinejs.astro";
+---
+<Layout title="Predator" icon="predatorico.png">
+
+
+    <div>
+      <h2 class="mt-5">Predator</h2>
+      <h5>Başlık oluşturma tarihi, 17 Nisan, 2023</h5>
+      <img src="predator.jpeg" alt="" class="img">
+      <p><Alpinejs>
+        <div x-data>
+        <span x-text="$store.yazilar.predatorText"></span>
+        </div></Alpinejs>
+      </p>
+      
+    </div>
+
+
+
+
+</Layout>
+

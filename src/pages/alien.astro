@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Alpinejs from "../components/Alpinejs.astro";
+---
+<Layout title="alien" icon="alienico.webp">
+
+
+    <div>
+      <h2 class="mt-5">Alien</h2>
+      <h5>Başlık oluşturma tarihi, 17 Nisan, 2023</h5>
+      <img src="alien.jpg" alt="" class="img">
+      <p><Alpinejs>
+        <div x-data>
+        <span x-text="$store.yazilar.alienText"></span>
+        </div></Alpinejs>
+      </p>
+      
+    </div>
+
+
+
+
+</Layout>
+
+

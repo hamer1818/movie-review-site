@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+
+import Alpinejs from "../components/Alpinejs.astro";
+---
+
+<Layout title="Indiana Jones" icon="indianajonesico.png">
+    <div>
+        <h2 class="mt-5">İndiana Jones</h2>
+        <h5>Başlık oluşturma tarihi, 17 Nisan, 2023</h5>
+        <img src="indianaJones.jpg" alt="" class="img">
+        <p><Alpinejs>
+          <div x-data>
+          <span x-text="$store.yazilar.ijText"></span>
+          </div></Alpinejs>
+        </p>
+        
+      </div>
+</Layout>
+
